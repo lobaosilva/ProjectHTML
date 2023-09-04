@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Antidote Game Labs &trade;</title>
+        <!--
+            - favicon
+        -->
+        <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+        <!--
+            - custom css link
+        -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <!--
+            - google font link
+        -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    </head>
+
+    <body id="top" class="dark_theme">
+        <!--
+            - #HEADER
+        -->
+        <header class="header" data-header>
+            <div class="container">
+                <h1 class="h1 logo">
+                    <a href="#"><span>A</span>ntidote</a>
+                </h1>
+                <div class="navbar-actions">
+                    <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+                        <span class="icon"></span>
+                    </button>
+                </div>
+                <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                </button>
+                <nav class="navbar" data-navbar>
+                    <ul class="navbar-list">
+                        <li>
+                            <a href="#home" class="navbar-link">Home</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#about" class="navbar-link">About</a>
+                        </li> -->
+                        <li>
+                            <a href="#contact" class="navbar-link">Contact</a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="navbar-link"><img src="./assets/images/pt-br.png" alt="" style="width: 25px;" /></a>
+                        </li>
+                        <li>
+                            <a href="index-en.html" class="navbar-link"><img src="./assets/images/en.png" alt="" style="width: 25px;"/></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <article class="container">
+                <!--
+                    - #HERO
+                -->
+                <section class="hero" id="home">
+                    <figure class="hero-banner">
+                        <picture>
+                            <source srcset="./assets/images/hero-banner.png" media="(min-width: 768px)">
+                            <source srcset="./assets/images/hero-banner-md.png" media="(min-width: 500px)">
+                            <img src="./assets/images/hero-banner-sm.png" alt="Logo" class="w-100">
+                        </picture>
+                    </figure>
+                    <div class="hero-content">
+                        <a href="#contact" class="btn btn-primary">Get in touch</a>
+                    </div>
+                    <ul class="hero-social-list">
+                        <li>
+                            <a href="#" class="hero-social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                                <div class="tooltip">Instagram</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hero-social-link">
+                                <ion-icon name="logo-discord"></ion-icon>
+                                <div class="tooltip">Discord</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hero-social-link">
+                                <ion-icon name="logo-twitch"></ion-icon>
+                                <div class="tooltip">Twitch</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hero-social-link">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                                <div class="tooltip">Linkedin</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#stats" class="scroll-down">Scroll</a>
+                </section>
+                <!--
+                    - #ABOUT
+                -->
+                <!-- <section class="about" id="about">
+                    <figure class="about-banner">
+                        <img src="./assets/images/about-banner.png" alt="A man in a alice blue shirt with a thinking expression" class="w-100">
+                    </figure>
+                    <div class="about-content section-content">
+                        <p class="section-subtitle">Sobre</p>
+                        <h2 class="h3 section-title">Em breve</h2>
+                        <p class="section-text">
+                            Em breve...
+                        </p>
+                    </div>
+                </section> -->
+                <!--
+                    - #CONTACT
+                -->
+                <section class="contact" id="contact">
+                    <div class="contact-content section-content">
+                        <p class="section-subtitle">Contact</p>
+                        <h2 class="h3 section-title">Needing to talk to us?</h2>
+                        <p class="section-text">
+                            Get in touch and let me know how i can help. Fill out the form and i'll be in touch as soon as possible.
+                        </p>
+                        <ul class="contact-list">
+                            <li class="contact-list-item">
+                                <div class="contact-item-icon">
+                                    <ion-icon name="location-outline"></ion-icon>
+                                </div>
+                                <div class="wrapper">
+                                    <h3 class="h4 contact-item-title">Address:</h3>
+                                    <address class="contact-info">
+                                        Coming soon
+                                    </address>
+                                </div>
+                            </li>
+                            <li class="contact-list-item">
+                                <div class="contact-item-icon">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                </div>
+                                <div class="wrapper">
+                                    <h3 class="h4 contact-item-title">Phone:</h3>
+                                    <a href="tel:01234567789" class="contact-info"><ion-icon name="logo-whatsapp" style="padding-right: 10px;"></ion-icon>(xx) xxxxx - xxxx</a>
+                                    <a href="tel:09765432200" class="contact-info"><ion-icon name="paper-plane" style="padding-right: 10px;"></ion-icon>(xx) xxxxx - xxxx</a>
+                                </div>
+                            </li>
+                            <li class="contact-list-item">
+                                <div class="contact-item-icon">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                </div>
+                                <div class="wrapper">
+                                    <h3 class="h4 contact-item-title">Email:</h3>
+                                    <a href="mailto:info@jack.com" class="contact-info">info@antidote.com</a>
+                                    <a href="mailto:support@jack.com" class="contact-info">suporte@antidote.com</a>
+                                </div>
+                            </li>
+                            <li>
+                                <ul class="contact-social-list">
+                                    <li>
+                                        <a href="#" class="contact-social-link">
+                                            <div class="tooltip">Facebook</div>
+                                            <ion-icon name="logo-facebook"></ion-icon>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="contact-social-link">
+                                            <div class="tooltip">Instagram</div>
+                                            <ion-icon name="logo-instagram"></ion-icon>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="contact-social-link">
+                                            <div class="tooltip">Twitter</div>
+                                            <ion-icon name="logo-twitter"></ion-icon>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="contact-social-link">
+                                            <div class="tooltip">Linkedin</div>
+                                            <ion-icon name="logo-linkedin"></ion-icon>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="contact-social-link">
+                                            <div class="tooltip">Youtube</div>
+                                            <ion-icon name="logo-youtube"></ion-icon>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="contact-social-link">
+                                            <div class="tooltip">Twitch</div>
+                                            <ion-icon name="logo-twitch"></ion-icon>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="contact-social-link">
+                                            <div class="tooltip">Discord</div>
+                                            <ion-icon name="logo-discord"></ion-icon>
+                                        </a>
+                                    </li>
+                                    <li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <form action="" class="contact-form">
+                        <div class="form-wrapper">
+                            <label for="name" class="form-label">Name</label>
+                            <div class="input-wrapper">
+                                <input type="text" name="name" id="name" required placeholder="John Doe" class="input-field">
+                                <ion-icon name="person-circle"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="form-wrapper">
+                            <label for="email" class="form-label">Email</label>
+                            <div class="input-wrapper">
+                                <input type="email" name="email" id="email" required placeholder="johndoe@mail.com" class="input-field">
+                                <ion-icon name="mail"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="form-wrapper">
+                            <label for="phone" class="form-label">Phone</label>
+                            <div class="input-wrapper">
+                                <input type="tel" name="phone" id="phone" required placeholder="(xx) xxxxx - xxxx" class="input-field">
+                                <ion-icon name="call"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="form-wrapper">
+                            <label for="message" class="form-label">Message</label>
+                            <div class="input-wrapper">
+                                <textarea name="message" id="message" required placeholder="Write message..." class="input-field"></textarea>
+                                <ion-icon name="chatbubbles"></ion-icon>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary icon-send"><ion-icon name="send" style="margin-right: 10px;"></ion-icon>Send</button>
+                    </form>
+                </section>
+            </article>
+        </main>
+        <!--
+            - #FOOTER
+        -->
+        <footer class="footer">
+            <div class="container">
+                <p class="h1 logo">
+                    <a href="#">
+                        <img src="./assets/images/RITRS.png" class="footer-img">
+                    </a>
+                </p>
+                <p class="copyright">
+                    &copy; 2023 <a href="#">Antidote Game Labs &trade;</a> All rights reserved
+                </p>
+            </div>
+        </footer>
+        <!--
+            - #GO TO TOP
+        -->
+        <a href="#top" class="go-top" data-go-top title="Go to Top">
+            <ion-icon name="arrow-up"></ion-icon>
+        </a>
+        <!--
+            - custom js link
+        -->
+        <script src="./assets/js/script.js"></script>
+        <!--
+            - ionicon link
+        -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
